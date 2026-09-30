@@ -1,0 +1,105 @@
+{
+  "built_at": "2026-09-29T08:13:24.598Z",
+  "seed": 42,
+  "n_cases": 100,
+  "by_track": {
+    "B_tool_selection": 25,
+    "C_tool_guardrail": 15,
+    "D_rag_gate": 15,
+    "E_injection_guard": 10,
+    "F_cardinality_multilingual": 10,
+    "A_model_router": 25
+  },
+  "low_confidence_items": [
+    {
+      "id": "c039",
+      "why": "工具是通用 HTTP 客户端; BFCL 判为无需调用, 存在争议"
+    }
+  ],
+  "sources": [
+    {
+      "path": "data/raw/bfcl/BFCL_v3_live_simple.json",
+      "bytes": 260128,
+      "sha256": "b398743e6c0dfd2a"
+    },
+    {
+      "path": "data/raw/bfcl/BFCL_v3_live_irrelevance.json",
+      "bytes": 2202715,
+      "sha256": "0d259e1c3ab6ba06"
+    },
+    {
+      "path": "data/raw/bfcl/BFCL_v3_irrelevance.json",
+      "bytes": 160114,
+      "sha256": "975f51c51f688649"
+    },
+    {
+      "path": "data/raw/scifact/corpus.jsonl",
+      "bytes": 8023638,
+      "sha256": "f0d32db0d156b526"
+    },
+    {
+      "path": "data/raw/scifact/queries.jsonl",
+      "bytes": 129085,
+      "sha256": "9db7df096f741443"
+    },
+    {
+      "path": "data/raw/scifact/qrels_test.tsv",
+      "bytes": 5389,
+      "sha256": "0864bb985e0ca236"
+    },
+    {
+      "path": "data/raw/banking77/test.jsonl",
+      "bytes": 365101,
+      "sha256": "fb1b0043ded745b8"
+    },
+    {
+      "path": "data/raw/massive/test_en.json.gz",
+      "bytes": 54111,
+      "sha256": "6dd692a9c188f395"
+    },
+    {
+      "path": "data/raw/massive/test_zh-CN.json.gz",
+      "bytes": 59805,
+      "sha256": "57d7ae5ef5376eeb"
+    },
+    {
+      "path": "data/raw/massive/test_ja.json.gz",
+      "bytes": 64808,
+      "sha256": "d5ac309a0f50398c"
+    },
+    {
+      "path": "data/raw/massive/test_de.json.gz",
+      "bytes": 59567,
+      "sha256": "257abf60a72b94b2"
+    },
+    {
+      "path": "data/raw/massive/test_ar.json.gz",
+      "bytes": 63572,
+      "sha256": "08eb25c15d7b4d74"
+    },
+    {
+      "path": "data/raw/injections/test.jsonl",
+      "bytes": 17199,
+      "sha256": "8badda825a95a4ed"
+    },
+    {
+      "path": "data/raw/injections/train.jsonl",
+      "bytes": 77329,
+      "sha256": "f755a2969ec7c490"
+    },
+    {
+      "path": "data/raw/jailbreak/jailbreak_test_balanced.csv",
+      "bytes": 369990,
+      "sha256": "809ef0d7c82fa05c"
+    },
+    {
+      "path": "data/raw/routerbench/routerbench_slim.jsonl",
+      "bytes": 35914301,
+      "sha256": "d76967e49de9ef11"
+    }
+  ],
+  "models": {
+    "jev": "typesafe/jev (api.typesafe.ai/v1/systemone)",
+    "laya": "convaiinnovations/laya (local, pip laya 0.3.21)"
+  }
+}

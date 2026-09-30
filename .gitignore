@@ -1,0 +1,25 @@
+# secrets
+.env
+*.env
+!.env.example
+
+# upstream raw datasets (re-downloadable, licensed separately) and private logs
+data/raw/
+session*.jsonl
+
+# environments / caches
+.venv/
+venv/
+.hf-cache/
+__pycache__/
+node_modules/
+.DS_Store
+
+# LaTeX build products
+paper/build/
+paper/tex/*.pdf
+paper/tex/*.log
+paper/tex/*.aux
+paper/dist/*.zip
+paper/dist/*.tar.gz
+paper/dist/*review*.pdf

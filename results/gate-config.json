@@ -1,0 +1,144 @@
+{
+  "generated_at": "2026-09-29T21:45:06.078Z",
+  "cases": "bench/ai-H_groundedness.jsonl",
+  "llm_cost_per_call_usd": 0.005,
+  "default_target_fnr": 0.05,
+  "recommended": {
+    "model": "jev-agentinfra",
+    "target_fnr": 0.05,
+    "feasible": true,
+    "threshold": 0.045,
+    "fnr": 0.03,
+    "fpr": 0.35,
+    "llm_call_rate": 0.66,
+    "calls_saved_per_1m": 340000,
+    "usd_saved_per_1m": 1700,
+    "accuracy": 0.81
+  },
+  "per_model": [
+    {
+      "model": "laya-agentinfra",
+      "n": 200,
+      "positives": 100,
+      "negatives": 100,
+      "options": [
+        {
+          "model": "laya-agentinfra",
+          "target_fnr": 0.02,
+          "feasible": true,
+          "threshold": 0.01,
+          "fnr": 0.01,
+          "fpr": 1,
+          "llm_call_rate": 0.995,
+          "calls_saved_per_1m": 5000,
+          "usd_saved_per_1m": 25,
+          "accuracy": 0.495
+        },
+        {
+          "model": "laya-agentinfra",
+          "target_fnr": 0.05,
+          "feasible": true,
+          "threshold": 0.03,
+          "fnr": 0.04,
+          "fpr": 0.99,
+          "llm_call_rate": 0.975,
+          "calls_saved_per_1m": 25000,
+          "usd_saved_per_1m": 125,
+          "accuracy": 0.485
+        },
+        {
+          "model": "laya-agentinfra",
+          "target_fnr": 0.1,
+          "feasible": true,
+          "threshold": 0.045,
+          "fnr": 0.1,
+          "fpr": 0.95,
+          "llm_call_rate": 0.925,
+          "calls_saved_per_1m": 75000,
+          "usd_saved_per_1m": 375,
+          "accuracy": 0.475
+        },
+        {
+          "model": "laya-agentinfra",
+          "target_fnr": 0.2,
+          "feasible": true,
+          "threshold": 0.145,
+          "fnr": 0.2,
+          "fpr": 0.43,
+          "llm_call_rate": 0.615,
+          "calls_saved_per_1m": 385000,
+          "usd_saved_per_1m": 1925,
+          "accuracy": 0.685
+        }
+      ],
+      "errors": null
+    },
+    {
+      "model": "jev-agentinfra",
+      "n": 200,
+      "positives": 100,
+      "negatives": 100,
+      "options": [
+        {
+          "model": "jev-agentinfra",
+          "target_fnr": 0.02,
+          "feasible": true,
+          "threshold": 0.025,
+          "fnr": 0.02,
+          "fpr": 0.55,
+          "llm_call_rate": 0.765,
+          "calls_saved_per_1m": 235000,
+          "usd_saved_per_1m": 1175,
+          "accuracy": 0.715
+        },
+        {
+          "model": "jev-agentinfra",
+          "target_fnr": 0.05,
+          "feasible": true,
+          "threshold": 0.045,
+          "fnr": 0.03,
+          "fpr": 0.35,
+          "llm_call_rate": 0.66,
+          "calls_saved_per_1m": 340000,
+          "usd_saved_per_1m": 1700,
+          "accuracy": 0.81
+        },
+        {
+          "model": "jev-agentinfra",
+          "target_fnr": 0.1,
+          "feasible": true,
+          "threshold": 0.1,
+          "fnr": 0.1,
+          "fpr": 0.22,
+          "llm_call_rate": 0.56,
+          "calls_saved_per_1m": 440000,
+          "usd_saved_per_1m": 2200,
+          "accuracy": 0.84
+        },
+        {
+          "model": "jev-agentinfra",
+          "target_fnr": 0.2,
+          "feasible": true,
+          "threshold": 0.62,
+          "fnr": 0.2,
+          "fpr": 0.02,
+          "llm_call_rate": 0.41,
+          "calls_saved_per_1m": 590000,
+          "usd_saved_per_1m": 2950,
+          "accuracy": 0.89
+        }
+      ],
+      "errors": null
+    }
+  ],
+  "policy": {
+    "gate_model": "jev-agentinfra",
+    "threshold": 0.045,
+    "rule": "if P(relevant) >= 0.045 then call the LLM else answer \"not in the retrieved context\"",
+    "expected": {
+      "llm_call_rate": 0.66,
+      "missed_answerable": 0.03,
+      "usd_saved_per_1m_queries": 1700
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "sys1-eval: Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses",
+  "upload_type": "software",
+  "version": "2.0.0",
+  "publication_date": "2026-09-30",
+  "creators": [
+    { "name": "Li, Jiawei" }
+  ],
+  "description": "Evaluation cases, raw model outputs and analysis code for a paired evaluation of two System-1 decision models (Laya, open weights; Jev, hosted API) on 11 decision points of an LLM agent harness: model routing, tool selection, tool-call guardrails, RAG relevance gating, prompt-injection screening, groundedness, pre-execution safety and PII egress. Includes 7,283 base cases, 6,640 robustness variants, three control experiments, and a single analysis script that regenerates every number and figure. Code: MIT. Annotations and outputs: CC BY 4.0. Evaluation cases embed text from third-party datasets that keep their original licenses (see DATA_LICENSE.md).",
+  "license": "MIT",
+  "keywords": ["LLM agents", "decision models", "evaluation", "benchmark", "prompt injection", "tool selection", "retrieval-augmented generation", "calibration"],
+  "related_identifiers": [
+    { "identifier": "https://github.com/David-DL-Space/sys1-eval", "relation": "isSupplementTo", "scheme": "url" }
+  ]
+}

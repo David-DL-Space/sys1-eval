@@ -1,0 +1,6 @@
+laya==0.3.21
+numpy
+scipy
+pandas
+pyarrow
+matplotlib

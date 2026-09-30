@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this benchmark or code, please cite it as below."
+title: "sys1-eval: Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses"
+authors:
+  - family-names: Li
+    given-names: Jiawei
+    email: davidlijiawei@gmail.com
+version: 2.0.0
+date-released: 2026-09-30
+license: MIT
+repository-code: "https://github.com/David-DL-Space/sys1-eval"
+keywords:
+  - LLM agents
+  - decision models
+  - evaluation
+  - prompt injection
+  - tool selection
+  - retrieval-augmented generation
+  - calibration
+preferred-citation:
+  type: article
+  title: "Fast Models, Slow Evidence: A Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses"
+  authors:
+    - family-names: Li
+      given-names: Jiawei
+  year: 2026

@@ -1,0 +1,11 @@
+import { readFileSync } from "node:fs";
+const j = JSON.parse(readFileSync(process.env.TEMP + "/or-models-keyed.json", "utf8").replace(/^\uFEFF/, ""));
+const ids = j.data.map(m => ({ id: m.id, ctx: m.context_length, p: Number(m.pricing.prompt)*1e6, c: Number(m.pricing.completion)*1e6 }));
+const want = /^(deepseek\/deepseek-v4\.1-flash|openai\/gpt-4o-mini|amazon\/nova-lite-v1|mistralai\/mistral-small-24b-instruct-2501|google\/gemini.*flash|anthropic\/claude-haiku.*|anthropic\/claude-sonnet-5\.5|openai\/gpt-5.*|qwen\/qwen3.*flash|meta-llama\/llama-4.*scout)/i;
+const rows = ids.filter(m => want.test(m.id));
+rows.sort((a,b)=>a.p-b.p);
+console.log("候选 tier-2 模型（$/百万 token）:");
+for (const r of rows) console.log("  " + r.id.padEnd(46) + "$" + r.p.toFixed(3).padStart(7) + " in / $" + r.c.toFixed(3).padStart(7) + " out");
+const frontier = ids.filter(m => /(opus|gpt-5\.|sonnet-5|gemini-3)/i.test(m.id)).sort((a,b)=>a.p-b.p).slice(0,4);
+console.log("\n前沿模型参考价:");
+for (const r of frontier) console.log("  " + r.id.padEnd(46) + "$" + r.p.toFixed(3).padStart(7) + " in / $" + r.c.toFixed(3).padStart(7) + " out");

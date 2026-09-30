@@ -1,0 +1,44 @@
+{
+  "seed": 42,
+  "per_dataset": {
+    "SciFact": {
+      "corpus": 5183,
+      "queries_with_qrels": 300,
+      "pos": 200,
+      "hard_neg": 200,
+      "easy_neg": 80
+    },
+    "NFCorpus": {
+      "corpus": 3633,
+      "queries_with_qrels": 323,
+      "pos": 200,
+      "hard_neg": 200,
+      "easy_neg": 80
+    },
+    "FiQA": {
+      "corpus": 57638,
+      "queries_with_qrels": 648,
+      "pos": 200,
+      "hard_neg": 200,
+      "easy_neg": 80
+    },
+    "SciDocs": {
+      "corpus": 25657,
+      "queries_with_qrels": 1000,
+      "pos": 100,
+      "hard_neg": 100,
+      "easy_neg": 40
+    },
+    "CQADupStack-android": {
+      "corpus": 22998,
+      "queries_with_qrels": 699,
+      "pos": 100,
+      "hard_neg": 100,
+      "easy_neg": 40
+    }
+  },
+  "single_passage": 1920,
+  "multi_passage": 200,
+  "question_single": "Does the passage contain information that helps answer the question?",
+  "question_multi": "Do these passages together contain information that helps answer the question?"
+}

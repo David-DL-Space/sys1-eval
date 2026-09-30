@@ -1,0 +1,413 @@
+{
+  "laya": {
+    "overall": {
+      "n": 99,
+      "excluded_low_confidence": 1,
+      "scored": 99,
+      "correct": 57,
+      "acc": 0.5757575757575758,
+      "acc_ci": [
+        0.4773648481449718,
+        0.6684905255559431
+      ],
+      "mean_conf": 0.7391494949494952,
+      "ece": 0.1947111111111111,
+      "brier": 0.08106453656565658,
+      "high_conf_coverage": 0.3838383838383838,
+      "high_conf_precision": 0.6578947368421053,
+      "confident_wrong": 13,
+      "p50_ms": 37.8,
+      "p95_ms": 53.7
+    },
+    "by_track": {
+      "B_tool_selection": {
+        "n": 25,
+        "excluded_low_confidence": 0,
+        "scored": 25,
+        "correct": 14,
+        "acc": 0.56,
+        "acc_ci": [
+          0.37067017019564436,
+          0.7333462505299743
+        ],
+        "mean_conf": 0.6778799999999999,
+        "ece": 0.21337600000000004,
+        "brier": 0.0970804616,
+        "high_conf_coverage": 0.36,
+        "high_conf_precision": 0.5555555555555556,
+        "confident_wrong": 4,
+        "p50_ms": 44.4,
+        "p95_ms": 129.7
+      },
+      "C_tool_guardrail": {
+        "n": 14,
+        "excluded_low_confidence": 1,
+        "scored": 14,
+        "correct": 8,
+        "acc": 0.5714285714285714,
+        "acc_ci": [
+          0.3259026690286935,
+          0.7861949006959947
+        ],
+        "mean_conf": 0.899292857142857,
+        "ece": 0.3738785714285714,
+        "brier": 0.02568099214285715,
+        "high_conf_coverage": 0.7142857142857143,
+        "high_conf_precision": 0.6,
+        "confident_wrong": 4,
+        "p50_ms": 35.7,
+        "p95_ms": 42.7
+      },
+      "D_rag_gate": {
+        "n": 15,
+        "excluded_low_confidence": 0,
+        "scored": 15,
+        "correct": 11,
+        "acc": 0.7333333333333333,
+        "acc_ci": [
+          0.48049110342313245,
+          0.8910272389681717
+        ],
+        "mean_conf": 0.8614266666666667,
+        "ece": 0.2169866666666666,
+        "brier": 0.028559630666666665,
+        "high_conf_coverage": 0.5333333333333333,
+        "high_conf_precision": 0.875,
+        "confident_wrong": 1,
+        "p50_ms": 37.4,
+        "p95_ms": 40.1
+      },
+      "E_injection_guard": {
+        "n": 10,
+        "excluded_low_confidence": 0,
+        "scored": 10,
+        "correct": 8,
+        "acc": 0.8,
+        "acc_ci": [
+          0.49015684672072346,
+          0.9433190520193067
+        ],
+        "mean_conf": 0.91669,
+        "ece": 0.16657000000000002,
+        "brier": 0.014781372999999995,
+        "high_conf_coverage": 0.6,
+        "high_conf_precision": 0.8333333333333334,
+        "confident_wrong": 1,
+        "p50_ms": 37.1,
+        "p95_ms": 44
+      },
+      "F_cardinality_multilingual": {
+        "n": 10,
+        "excluded_low_confidence": 0,
+        "scored": 10,
+        "correct": 3,
+        "acc": 0.3,
+        "acc_ci": [
+          0.10778928748621182,
+          0.6032267800204347
+        ],
+        "mean_conf": 0.7062499999999999,
+        "ece": 0.4307700000000001,
+        "brier": 0.016053851,
+        "high_conf_coverage": 0.5,
+        "high_conf_precision": 0.4,
+        "confident_wrong": 3,
+        "p50_ms": 37.2,
+        "p95_ms": 57.6
+      },
+      "A_model_router": {
+        "n": 25,
+        "excluded_low_confidence": 0,
+        "scored": 25,
+        "correct": 13,
+        "acc": 0.52,
+        "acc_ci": [
+          0.3349821795314731,
+          0.6996899607103999
+        ],
+        "mean_conf": 0.579516,
+        "ece": 0.080252,
+        "brier": 0.1800838796,
+        "high_conf_coverage": 0,
+        "high_conf_precision": null,
+        "confident_wrong": 0,
+        "p50_ms": 38.4,
+        "p95_ms": 53.7
+      }
+    }
+  },
+  "jev": {
+    "overall": {
+      "n": 99,
+      "excluded_low_confidence": 1,
+      "scored": 99,
+      "correct": 82,
+      "acc": 0.8282828282828283,
+      "acc_ci": [
+        0.7421056528666339,
+        0.8899342998373303
+      ],
+      "mean_conf": 0.9372727272727271,
+      "ece": 0.17909090909090894,
+      "brier": 0.017036363636363627,
+      "high_conf_coverage": 0.8282828282828283,
+      "high_conf_precision": 0.8170731707317074,
+      "confident_wrong": 15,
+      "p50_ms": 309,
+      "p95_ms": 1476
+    },
+    "by_track": {
+      "B_tool_selection": {
+        "n": 25,
+        "excluded_low_confidence": 0,
+        "scored": 25,
+        "correct": 24,
+        "acc": 0.96,
+        "acc_ci": [
+          0.8045552759497747,
+          0.9929039496133009
+        ],
+        "mean_conf": 0.9952,
+        "ece": 0.03520000000000001,
+        "brier": 0.00006800000000000012,
+        "high_conf_coverage": 1,
+        "high_conf_precision": 0.96,
+        "confident_wrong": 1,
+        "p50_ms": 312,
+        "p95_ms": 1172
+      },
+      "C_tool_guardrail": {
+        "n": 14,
+        "excluded_low_confidence": 1,
+        "scored": 14,
+        "correct": 14,
+        "acc": 1,
+        "acc_ci": [
+          0.7846829880728186,
+          1
+        ],
+        "mean_conf": 0.8642857142857141,
+        "ece": 0.13571428571428573,
+        "brier": 0.04165714285714285,
+        "high_conf_coverage": 0.5714285714285714,
+        "high_conf_precision": 1,
+        "confident_wrong": 0,
+        "p50_ms": 310,
+        "p95_ms": 3558
+      },
+      "D_rag_gate": {
+        "n": 15,
+        "excluded_low_confidence": 0,
+        "scored": 15,
+        "correct": 12,
+        "acc": 0.8,
+        "acc_ci": [
+          0.5481406466534955,
+          0.9295257935638959
+        ],
+        "mean_conf": 0.8786666666666666,
+        "ece": 0.248,
+        "brier": 0.039893333333333336,
+        "high_conf_coverage": 0.6666666666666666,
+        "high_conf_precision": 0.9,
+        "confident_wrong": 1,
+        "p50_ms": 293,
+        "p95_ms": 3956
+      },
+      "E_injection_guard": {
+        "n": 10,
+        "excluded_low_confidence": 0,
+        "scored": 10,
+        "correct": 10,
+        "acc": 1,
+        "acc_ci": [
+          0.7224598312333834,
+          1
+        ],
+        "mean_conf": 0.897,
+        "ece": 0.10300000000000001,
+        "brier": 0.023670000000000004,
+        "high_conf_coverage": 0.8,
+        "high_conf_precision": 1,
+        "confident_wrong": 0,
+        "p50_ms": 308,
+        "p95_ms": 1103
+      },
+      "F_cardinality_multilingual": {
+        "n": 10,
+        "excluded_low_confidence": 0,
+        "scored": 10,
+        "correct": 10,
+        "acc": 1,
+        "acc_ci": [
+          0.7224598312333834,
+          1
+        ],
+        "mean_conf": 0.916,
+        "ece": 0.08399999999999996,
+        "brier": 0.022559999999999997,
+        "high_conf_coverage": 0.7,
+        "high_conf_precision": 1,
+        "confident_wrong": 0,
+        "p50_ms": 509,
+        "p95_ms": 871
+      },
+      "A_model_router": {
+        "n": 25,
+        "excluded_low_confidence": 0,
+        "scored": 25,
+        "correct": 12,
+        "acc": 0.48,
+        "acc_ci": [
+          0.30031003928960015,
+          0.665017820468527
+        ],
+        "mean_conf": 0.98,
+        "ece": 0.5103999999999999,
+        "brier": 0.0016400000000000004,
+        "high_conf_coverage": 0.96,
+        "high_conf_precision": 0.45833333333333337,
+        "confident_wrong": 13,
+        "p50_ms": 324,
+        "p95_ms": 1476
+      }
+    }
+  },
+  "laya-typed-decisions": {
+    "overall": {
+      "n": 99,
+      "excluded_low_confidence": 1,
+      "scored": 99,
+      "correct": 59,
+      "acc": 0.5959595959595959,
+      "acc_ci": [
+        0.4974671538075806,
+        0.6872829862135781
+      ],
+      "mean_conf": 0.543989898989899,
+      "ece": 0.10920404040404036,
+      "brier": 0.16146123797979803,
+      "high_conf_coverage": 0.020202020202020204,
+      "high_conf_precision": 1,
+      "confident_wrong": 0,
+      "p50_ms": 1053.1,
+      "p95_ms": 3036.1
+    },
+    "by_track": {
+      "B_tool_selection": {
+        "n": 25,
+        "excluded_low_confidence": 0,
+        "scored": 25,
+        "correct": 16,
+        "acc": 0.64,
+        "acc_ci": [
+          0.44518154601046633,
+          0.7975234356826436
+        ],
+        "mean_conf": 0.376672,
+        "ece": 0.334568,
+        "brier": 0.26051928360000004,
+        "high_conf_coverage": 0,
+        "high_conf_precision": null,
+        "confident_wrong": 0,
+        "p50_ms": 1959.9,
+        "p95_ms": 3058.8
+      },
+      "C_tool_guardrail": {
+        "n": 14,
+        "excluded_low_confidence": 1,
+        "scored": 14,
+        "correct": 9,
+        "acc": 0.6428571428571429,
+        "acc_ci": [
+          0.3876400468214041,
+          0.8365550926279727
+        ],
+        "mean_conf": 0.6465214285714284,
+        "ece": 0.1505071428571429,
+        "brier": 0.13302163214285714,
+        "high_conf_coverage": 0,
+        "high_conf_precision": null,
+        "confident_wrong": 0,
+        "p50_ms": 432.6,
+        "p95_ms": 3151.1
+      },
+      "D_rag_gate": {
+        "n": 15,
+        "excluded_low_confidence": 0,
+        "scored": 15,
+        "correct": 12,
+        "acc": 0.8,
+        "acc_ci": [
+          0.5481406466534955,
+          0.9295257935638959
+        ],
+        "mean_conf": 0.6778533333333333,
+        "ece": 0.14553333333333332,
+        "brier": 0.11451059600000003,
+        "high_conf_coverage": 0,
+        "high_conf_precision": null,
+        "confident_wrong": 0,
+        "p50_ms": 1082.9,
+        "p95_ms": 1221.7
+      },
+      "E_injection_guard": {
+        "n": 10,
+        "excluded_low_confidence": 0,
+        "scored": 10,
+        "correct": 7,
+        "acc": 0.7,
+        "acc_ci": [
+          0.3967732199795652,
+          0.892210712513788
+        ],
+        "mean_conf": 0.7428600000000001,
+        "ece": 0.1912799999999999,
+        "brier": 0.08625222800000001,
+        "high_conf_coverage": 0.1,
+        "high_conf_precision": 1,
+        "confident_wrong": 0,
+        "p50_ms": 451.9,
+        "p95_ms": 967.3
+      },
+      "F_cardinality_multilingual": {
+        "n": 10,
+        "excluded_low_confidence": 0,
+        "scored": 10,
+        "correct": 3,
+        "acc": 0.3,
+        "acc_ci": [
+          0.10778928748621182,
+          0.6032267800204347
+        ],
+        "mean_conf": 0.32946,
+        "ece": 0.15900000000000003,
+        "brier": 0.05128226899999999,
+        "high_conf_coverage": 0.1,
+        "high_conf_precision": 1,
+        "confident_wrong": 0,
+        "p50_ms": 1130.6,
+        "p95_ms": 1241
+      },
+      "A_model_router": {
+        "n": 25,
+        "excluded_low_confidence": 0,
+        "scored": 25,
+        "correct": 12,
+        "acc": 0.48,
+        "acc_ci": [
+          0.30031003928960015,
+          0.665017820468527
+        ],
+        "mean_conf": 0.5798359999999999,
+        "ece": 0.142292,
+        "brier": 0.18065494840000004,
+        "high_conf_coverage": 0,
+        "high_conf_precision": null,
+        "confident_wrong": 0,
+        "p50_ms": 1140,
+        "p95_ms": 2143.9
+      }
+    }
+  }
+}

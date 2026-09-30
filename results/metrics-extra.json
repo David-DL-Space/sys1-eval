@@ -1,0 +1,216 @@
+{
+  "routing": {
+    "laya": {
+      "n": 25,
+      "route_acc": 0.52,
+      "chosen_quality": 0.66,
+      "chosen_cost_usd": 0.00070888,
+      "cheap_share": 0.64,
+      "always_cheap": {
+        "quality": 0.47,
+        "cost_usd": 0.000032344
+      },
+      "always_strong": {
+        "quality": 0.96,
+        "cost_usd": 0.0023644
+      },
+      "oracle": {
+        "quality": 0.97,
+        "cost_usd": 0.00112
+      },
+      "difficulty_sweep": [
+        {
+          "threshold": 0.5,
+          "n": 25,
+          "quality": 0.92,
+          "cost_usd": 0.002294216,
+          "cheap_share": 0.08
+        },
+        {
+          "threshold": 1.5,
+          "n": 25,
+          "quality": 0.47,
+          "cost_usd": 0.000032344,
+          "cheap_share": 1
+        },
+        {
+          "threshold": 2.5,
+          "n": 25,
+          "quality": 0.47,
+          "cost_usd": 0.000032344,
+          "cheap_share": 1
+        }
+      ],
+      "score_n": 25,
+      "name": "laya"
+    },
+    "jev": {
+      "n": 25,
+      "route_acc": 0.48,
+      "chosen_quality": 0.47,
+      "chosen_cost_usd": 0.000032343999999999994,
+      "cheap_share": 1,
+      "always_cheap": {
+        "quality": 0.47,
+        "cost_usd": 0.000032343999999999994
+      },
+      "always_strong": {
+        "quality": 0.96,
+        "cost_usd": 0.0023644
+      },
+      "oracle": {
+        "quality": 0.97,
+        "cost_usd": 0.00112
+      },
+      "difficulty_sweep": [
+        {
+          "threshold": 0.5,
+          "n": 25,
+          "quality": 0.56,
+          "cost_usd": 0.0013984800000000003,
+          "cheap_share": 0.72
+        },
+        {
+          "threshold": 1.5,
+          "n": 25,
+          "quality": 0.51,
+          "cost_usd": 0.00020839200000000003,
+          "cheap_share": 0.92
+        },
+        {
+          "threshold": 2.5,
+          "n": 25,
+          "quality": 0.47,
+          "cost_usd": 0.000032343999999999994,
+          "cheap_share": 1
+        }
+      ],
+      "score_n": 25,
+      "name": "jev"
+    },
+    "laya-typed-decisions": {
+      "n": 25,
+      "route_acc": 0.48,
+      "chosen_quality": 0.84,
+      "chosen_cost_usd": 0.002003184,
+      "cheap_share": 0.2,
+      "always_cheap": {
+        "quality": 0.47,
+        "cost_usd": 0.000032344
+      },
+      "always_strong": {
+        "quality": 0.96,
+        "cost_usd": 0.0023644
+      },
+      "oracle": {
+        "quality": 0.97,
+        "cost_usd": 0.00112
+      },
+      "difficulty_sweep": [
+        {
+          "threshold": 0.5,
+          "n": 25,
+          "quality": 0.96,
+          "cost_usd": 0.0023644,
+          "cheap_share": 0
+        },
+        {
+          "threshold": 1.5,
+          "n": 25,
+          "quality": 0.47,
+          "cost_usd": 0.000032344,
+          "cheap_share": 1
+        },
+        {
+          "threshold": 2.5,
+          "n": 25,
+          "quality": 0.47,
+          "cost_usd": 0.000032344,
+          "cheap_share": 1
+        }
+      ],
+      "score_n": 25,
+      "name": "laya-typed-decisions"
+    }
+  },
+  "sweeps": {
+    "laya": {
+      "b_by_K": {
+        "5": {
+          "n": 9,
+          "ok": 7
+        },
+        "10": {
+          "n": 9,
+          "ok": 7
+        },
+        "20": {
+          "n": 7,
+          "ok": 0
+        }
+      },
+      "f_by_dataset": {
+        "BANKING77": {
+          "n": 5,
+          "ok": 2
+        },
+        "MASSIVE-intent": {
+          "n": 5,
+          "ok": 1
+        }
+      }
+    },
+    "jev": {
+      "b_by_K": {
+        "5": {
+          "n": 9,
+          "ok": 9
+        },
+        "10": {
+          "n": 9,
+          "ok": 8
+        },
+        "20": {
+          "n": 7,
+          "ok": 7
+        }
+      },
+      "f_by_dataset": {
+        "BANKING77": {
+          "n": 5,
+          "ok": 5
+        },
+        "MASSIVE-intent": {
+          "n": 5,
+          "ok": 5
+        }
+      }
+    },
+    "laya-typed-decisions": {
+      "b_by_K": {
+        "5": {
+          "n": 9,
+          "ok": 8
+        },
+        "10": {
+          "n": 9,
+          "ok": 6
+        },
+        "20": {
+          "n": 7,
+          "ok": 2
+        }
+      },
+      "f_by_dataset": {
+        "BANKING77": {
+          "n": 5,
+          "ok": 3
+        },
+        "MASSIVE-intent": {
+          "n": 5,
+          "ok": 0
+        }
+      }
+    }
+  }
+}

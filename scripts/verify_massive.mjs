@@ -1,0 +1,12 @@
+import { readFileSync } from "node:fs"; import { gunzipSync } from "node:zlib";
+const rows = gunzipSync(readFileSync("data/raw/massive/test_en.json.gz")).toString("utf8").split(/\r?\n/).filter(Boolean).map(l=>JSON.parse(l));
+const g = rows.filter(r=>r.label_text==="email_sendemail");
+console.log("en rows:", rows.length, "| email_sendemail count:", g.length);
+console.log(g.slice(0,8).map(r=>r.id+" | "+r.text).join("\n"));
+const q = rows.filter(r=>r.label_text==="qa_currency");
+console.log("\nqa_currency count:", q.length);
+console.log(q.slice(0,6).map(r=>r.id+" | "+r.text).join("\n"));
+const target = rows.find(r=>r.text==="how we can get credit");
+console.log("\nlookup \"how we can get credit\":", JSON.stringify(target));
+const idx = rows.findIndex(r=>r.text==="how we can get credit");
+console.log("neighbours:", rows.slice(Math.max(0,idx-2), idx+3).map(r=>r.id+" "+r.label_text+" :: "+r.text).join("\n"));

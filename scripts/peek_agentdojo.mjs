@@ -1,0 +1,13 @@
+import { readFileSync, writeFileSync } from "node:fs";
+const t = JSON.parse(readFileSync(process.env.TEMP + "/agentdojo-tree.json", "utf8"));
+const paths = t.tree.map((x) => x.path);
+console.log("total paths:", paths.length);
+const inj = paths.filter((p) => /inject/i.test(p));
+console.log("injection files:");
+console.log(inj.slice(0, 30).join("\n"));
+const attacks = paths.filter((p) => /attack/i.test(p) && p.endsWith(".py"));
+console.log("\nattack files:");
+console.log(attacks.slice(0, 20).join("\n"));
+const data = paths.filter((p) => /\.(json|yaml|csv)$/.test(p) && /(attack|inject|benchmark|task)/i.test(p));
+console.log("\ndata files:");
+console.log(data.slice(0, 20).join("\n"));
